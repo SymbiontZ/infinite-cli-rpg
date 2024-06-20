@@ -1,0 +1,10 @@
+'''GAME DIFFICULTY'''
+
+DIFF_SELECT_PROMPT = (
+    "-- SELECT DIFFICULTY --"
+    " <1> EASY"
+    " <2> NORMAL"
+    " <3> HARD"
+)
+
+DIFF_OPTS = { 1: "EASY", 2: "NORMAL", 3: "HARD", 4:"EXTREME"}
