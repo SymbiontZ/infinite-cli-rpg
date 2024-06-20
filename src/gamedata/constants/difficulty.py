@@ -1,10 +1,8 @@
 '''GAME DIFFICULTY'''
 
-DIFF_SELECT_PROMPT = (
+DIFF_SELECT_MSG = (
     "-- SELECT DIFFICULTY --"
     " <1> EASY"
     " <2> NORMAL"
     " <3> HARD"
 )
-
-DIFF_OPTS = { 1: "EASY", 2: "NORMAL", 3: "HARD", 4:"EXTREME"}

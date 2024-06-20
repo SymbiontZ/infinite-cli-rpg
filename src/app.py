@@ -1,5 +1,5 @@
-from utils.gameData import load_saves
-from utils.utils import clear
+from gamedata.load import load_saves
+from utils.extra import clear
 
 def start_game():
     clear()
