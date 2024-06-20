@@ -5,4 +5,5 @@ DIFF_SELECT_MSG = (
     " <1> EASY"
     " <2> NORMAL"
     " <3> HARD"
+    " <4> EXTREME"
 )

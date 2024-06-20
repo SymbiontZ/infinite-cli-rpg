@@ -1,11 +1,15 @@
-import time, json
+import time, json, os
 from utils.extra import clear
+from utils.constants.localdir import DATA_DIR
 from constants.difficulty import DIFF_SELECT_MSG
 from constants.options import DIFF_OPTS
 from gamedata.layout.save_file import new_savefile_dict
 
-def new_save(saveDir: str):
+def new_save(saveDir: str = None):
     '''Makes a new save file'''
+    if saveDir is None:
+        saveDir = os.path.join(DATA_DIR,"save_0.json")
+
     with open(saveDir, "w") as savefile:
         savefile.write("")
     
