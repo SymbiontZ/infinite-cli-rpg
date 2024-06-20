@@ -1,0 +1,27 @@
+# Ignorar la carpeta de datos del juego de ejemplo
+data/
+
+# Ignorar entornos virtuales
+env/
+venv/
+
+# Ignorar archivos de configuración de editores
+.vscode/
+.idea/
+
+# Ignorar archivos compilados
+__pycache__/
+*.py[cod]
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos temporales
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
