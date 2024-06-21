@@ -1,5 +1,5 @@
 import os
-from utils.constants.localdir import DATA_DIR
+from constants.localdir import DATA_DIR
 from utils.gamedata import save_file_join
 
 def load_saves() -> list:

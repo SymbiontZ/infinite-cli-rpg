@@ -1,7 +1,7 @@
 def new_savefile_dict (name:str, difficulty:int) -> dict:
     save_file = {
-        "name": {name},
-        "difficulty": {difficulty},
+        "name": f"{name}",
+        "difficulty": int(f"{difficulty}"),
         "level": 0,
         "stats": {
             "base": {
@@ -10,9 +10,11 @@ def new_savefile_dict (name:str, difficulty:int) -> dict:
                 "def":25,
             },
             "gained": {
-                "hp"
-                
-            }
+                "hp": 0,
+                "atk": 0,
+                "def": 0,
+            },
         },
+        "items": [],
     }
     return save_file

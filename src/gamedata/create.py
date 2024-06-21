@@ -1,21 +1,23 @@
 import time, json, os
-from utils.extra import clear
-from utils.constants.localdir import DATA_DIR
+from constants.localdir import DATA_DIR
 from constants.difficulty import DIFF_SELECT_MSG
 from constants.options import DIFF_OPTS
-from gamedata.layout.save_file import new_savefile_dict
+from layout.save_file import new_savefile_dict
+from utils.extra import clear
 
-def new_save(saveDir: str = None):
+def new_save(saveName: str = None):
     '''Makes a new save file'''
-    if saveDir is None:
-        saveDir = os.path.join(DATA_DIR,"save_0.json")
 
-    with open(saveDir, "w") as savefile:
+    if saveName is None:
+        saveName = os.path.join(DATA_DIR, "save_0.json")
+    else:
+        saveName = os.path.join(DATA_DIR, saveName)
+
+    with open(saveName, "w") as savefile:
         savefile.write("")
-    
-    print("No se encontró ningun archivo de guardado, creando uno nuevo...")
+
     time.sleep(3)
-    init_save(saveDir)
+    init_save(saveName)
 
 
 def init_save(saveDir: str):
@@ -35,7 +37,8 @@ def init_save(saveDir: str):
 
     # DATA TO DICT AND SAVE IT INTO JSON FILE #
     
-    saveFile_dict = new_savefile_dict()
+    saveFile_dict = new_savefile_dict(name= char_name, difficulty= difficulty)
+    print(saveFile_dict)
     json_gameData = json.dumps(saveFile_dict, indent=4)
     with open(saveDir, "w") as saveFile:
         saveFile.write(json_gameData)
