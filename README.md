@@ -5,6 +5,7 @@ I want to create a full rpg experience in cli (command line interface) using Pyt
 # Roadmap
 #### User Experience
 + Load and save games
++ Multiple save files
 + Difficult changes
 + User interface
 + Help section
