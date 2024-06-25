@@ -1,12 +1,10 @@
 from gamedata.load import load_saves
-from gamedata.create import new_save
-from utils.extra import clear
-
-def start_game():
-    clear()
-    saveFiles = load_saves()
-    if len(saveFiles) == 0:
-        new_save()
+from interface.principals import main_menu
+ 
+def main():
+    save_files = load_saves()
+    main_menu(save_files)
+    exit()
 
 if __name__ == "__main__":
-    start_game()
+    main()

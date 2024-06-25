@@ -1,4 +1,12 @@
-def new_savefile_dict (name:str, difficulty:int) -> dict:
+import os
+from constants.paths import DATA_PATH
+
+def filename_to_filepath(save_file_name:str) -> str:
+    "Returns the path to a save file"
+    return os.path.join(DATA_PATH,save_file_name) 
+
+
+def data_to_savefile_dict (name:str, difficulty:int) -> dict:
     save_file = {
         "name": f"{name}",
         "difficulty": int(f"{difficulty}"),
@@ -18,3 +26,7 @@ def new_savefile_dict (name:str, difficulty:int) -> dict:
         "items": [],
     }
     return save_file
+
+
+def save_list_to_save_dict(save_list):
+    print("hola")

@@ -7,3 +7,4 @@ DIFF_SELECT_MSG = (
     " <3> HARD\n"
     " <4> EXTREME\n"
 )
+

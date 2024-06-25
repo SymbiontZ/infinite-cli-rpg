@@ -1,8 +1,7 @@
 import os
-from constants.localdir import DATA_DIR
-from utils.gamedata import save_file_join
+from constants.paths import DATA_PATH
 
-def load_saves() -> list:
+def load_saves() -> list[str]:
     '''
     Searches on your directory in order to find save files.
     '''
@@ -11,9 +10,12 @@ def load_saves() -> list:
 
     # Checks if there is any path to save game #
     # If not, it creates one, otherwise stores in a list path of save files #
-    if not os.path.exists(DATA_DIR):           
-        os.mkdir(DATA_DIR)
+    if not os.path.exists(DATA_PATH):           
+        os.mkdir(DATA_PATH)
 
-    saved_games = os.listdir(DATA_DIR)
+    saved_games = os.listdir(DATA_PATH)
 
     return saved_games
+
+
+            
