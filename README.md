@@ -10,6 +10,8 @@ I want to create a full rpg experience in cli (command line interface) using Pyt
 + User interface
 + Help section
 + Multiple language
++ Time Played
+
 #### Mechanics
 + Leveling up
 + More attributes
