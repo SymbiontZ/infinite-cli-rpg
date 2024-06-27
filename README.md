@@ -17,5 +17,5 @@ I want to create a full rpg experience in cli (command line interface) using Pyt
 + More attributes
 + More classes
 + Item shop
-+ Randomize enemies
++ Multiple enemies
 + Adapting difficulty
