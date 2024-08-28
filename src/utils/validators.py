@@ -2,7 +2,7 @@ import os, json, jsonschema
 from typing import Union, Optional  
 from jsonschema import validate
 import jsonschema.exceptions
-from constants.datascheme import DATA_SCHEME
+from template.datascheme import DATA_SCHEME
 from constants.paths import DATA_PATH
 
 def validate_games(save_files: list[str]) -> bool:

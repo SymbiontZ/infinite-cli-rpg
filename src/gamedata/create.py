@@ -1,6 +1,6 @@
 import time, json, os
 from constants.difficulty import DIFF_SELECT_MSG
-from constants.options import DIFF_OPTS
+# from constants.options import DIFF_OPTS
 from utils.converters import data_to_savefile_dict, filename_to_filepath
 from utils.tools import clear
 
@@ -28,12 +28,12 @@ def init_save(saveDir: str):
         clear()
         char_name = input("Escriba el nombre de su personaje: ")
     
-    while difficulty not in DIFF_OPTS or difficulty is None:
-        clear()
-        try:
-            difficulty = int(input(DIFF_SELECT_MSG))
-        except ValueError:
-            difficulty = None
+    # while difficulty not in DIFF_OPTS or difficulty is None:
+    #     clear()
+    #     try:
+    #         difficulty = int(input(DIFF_SELECT_MSG))
+    #     except ValueError:
+    #         difficulty = None
 
     # DATA TO DICT AND SAVE IT INTO JSON FILE #
     

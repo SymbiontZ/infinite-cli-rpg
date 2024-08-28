@@ -1,0 +1,11 @@
+{
+    "mainmenu_top": "╔════════════════════════════════════════╗",
+    "mainmenu_1": "║  ❮1❯  C O N T I N U E   G A M E  ❮1❯   ║",
+    "mainmenu_2": "║  ❮2❯    S E L E C T   G A M E    ❮2❯   ║",
+    "mainmenu_3": "║  ❮3❯       N E W  G A M E        ❮3❯   ║",
+    "mainmenu_4": "║  ❮4❯     H E L P   G U I D E     ❮4❯   ║",
+    "mainmenu_5": "║  ❮5❯        O P T I O N S        ❮5❯   ║",
+    "mainmenu_0": "║  ❮0❯      E X I T   G A M E      ❮0❯   ║",
+    "mainmenu_bot": "╚════════════════════════════════════════╝"
+
+}

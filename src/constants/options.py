@@ -1,2 +1,0 @@
-MAIN_MENU_OPTS = [0,1,2,3]
-DIFF_OPTS = { 1: "EASY", 2: "NORMAL", 3: "HARD", 4:"EXTREME"}

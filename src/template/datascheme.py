@@ -1,4 +1,3 @@
-
 DATA_SCHEME = {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Scheme for the data of infinite-cli-rpg",

@@ -1,10 +1,12 @@
-from gamedata.load import load_saves
 from interface.principals import main_menu
+from config.setup import do_setup, save_config
  
 def main():
-    save_files = load_saves()
-    main_menu(save_files)
+    do_setup()
+    #main_menu()
+    save_config()
     exit()
 
 if __name__ == "__main__":
     main()
+ 
