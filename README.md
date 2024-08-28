@@ -9,10 +9,13 @@ I want to create a full rpg experience in cli (command line interface) using Pyt
 + Difficult changes
 + User interface
 + Help section
++ Multiple language
++ Time Played
+
 #### Mechanics
 + Leveling up
 + More attributes
 + More classes
 + Item shop
-+ Randomize enemies
++ Multiple enemies
 + Adapting difficulty
